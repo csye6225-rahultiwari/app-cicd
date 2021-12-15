@@ -1,4 +1,4 @@
-variable "vpc_region" {
+variable "region" {
   type        = string
   default = "us-east-1"
   description = "select aws region"
@@ -14,4 +14,9 @@ variable "domain_name" {
   type = string
   default = "dev.rahultiwari.me"
   description = "domain name"
+}
+
+variable "codedeploy_bucket" {
+  type = string
+  default = "codedeploy.rahultiwari.me"
 }
